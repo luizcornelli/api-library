@@ -5,6 +5,8 @@ atraso calculada por categoria de livro.
 
 ## Documentação
 
+- **[ARQUITETURA_HLD.md](ARQUITETURA_HLD.md):** desenho arquitetural de alto nível, com o
+  contexto do sistema e a ordem de uso dos recursos (por onde começar).
 - **[DEPLOY_PLANNING.md](DEPLOY_PLANNING.md):** stack, arquitetura, endpoints, configuração por
   profile, tutorial para rodar localmente e planejamento de deploy em produção.
 - **[DESENVOLVIMENTO_COM_IA.md](DESENVOLVIMENTO_COM_IA.md):** princípios, fluxo de trabalho e
