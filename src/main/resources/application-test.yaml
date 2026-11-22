@@ -1,0 +1,10 @@
+# Testes: o banco vem do Testcontainers (@ServiceConnection). Estatísticas ligadas para provar ausência de N+1.
+spring:
+  jpa:
+    properties:
+      hibernate:
+        generate_statistics: true
+logging:
+  level:
+    org.hibernate.stat: warn
+    org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: warn

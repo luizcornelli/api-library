@@ -1,0 +1,15 @@
+# PostgreSQL para desenvolvimento local. Credenciais vêm do arquivo .env (veja .env.example).
+services:
+  postgres:
+    image: postgres:18
+    environment:
+      POSTGRES_DB: ${DB_NOME:-biblioteca}
+      POSTGRES_USER: ${DB_USUARIO:?defina DB_USUARIO no .env}
+      POSTGRES_PASSWORD: ${DB_SENHA:?defina DB_SENHA no .env}
+    ports:
+      - "${DB_PORTA:-5432}:5432"
+    volumes:
+      - dados-biblioteca:/var/lib/postgresql
+
+volumes:
+  dados-biblioteca:
